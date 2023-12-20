@@ -6,6 +6,8 @@ import Image from 'next/image'
 import app from "@/images/app.png";
 import brick from "@/images/brick.png";
 import github from "@/images/github.png";
+import nfc from "@/images/nfc.png";
+import react from "@/images/react.png";
 import Button from "./Button";
 
 const MotionAppScreenHeader = motion(AppScreen.Header);
@@ -230,37 +232,19 @@ function InvestScreen({ custom, animated = false }) {
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
         <div className="px-4 py-6">
           <div className="space-y-4">
-            {/*[
-              { label: "Number of shares", value: "100" },
-              {
-                label: "Current market price",
-                value: (
-                  <div className="flex">
-                    $34.28
-                    <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6">
-                      <path
-                        d="M17 15V7H9M17 7 7 17"
-                        stroke="#2563eb"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </div>
-                ),
-              },
-              { label: "Estimated cost", value: "$3,428.00" },
-            ].map((item) => (
-              <div
-                key={item.label}
-                className="flex justify-between border-b border-gray-100 pb-4"
-              >
-                <div className="text-sm text-gray-500">{item.label}</div>
-                <div className="text-sm font-semibold text-gray-900">
-                  {item.value}
-                </div>
-              </div>
-            ))*/}
+            <Image 
+              src={nfc}
+              width={100}
+              height={100}
+              alt=""
+            />
+            <p>test</p>
+            <Image 
+              src={react}
+              width={80}
+              height={80}
+              alt=""
+            />
           </div>
         </div>
       </MotionAppScreenBody>
@@ -286,7 +270,7 @@ export const features = [
   {
     name: "Internship Projects",
     description:
-      "My internship at BrickSimple LLC had me work on two projects; one, a mobile contact card sharing app using NFC technology that I started and finished all by myself, an another, a revamped webpage for our client, a firearm detection and security company, which was created by myself and another head developer.",
+      "My internship at BrickSimple LLC had me work on two projects; one, a mobile contact card sharing app using NFC technology that I started and finished independently. The other, a revamped webpage for our client, a firearm detection and security company, which was created by myself and another head developer.",
     icon: DeviceTouchIcon,
     screen: InvestScreen,
   },

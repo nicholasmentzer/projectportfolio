@@ -1,4 +1,4 @@
-import {flutter} from "@/components/Icons"
+import {flutter, next, tailwind, react, javascript, html, typescript, java} from "@/components/Icons"
 
 export const navData = [
     {_id: 101, title: "Home", href: "#home"},
@@ -14,30 +14,30 @@ export const skillData = [
     },
     {
         name: "Next.js",
-        icon: flutter,
+        icon: next,
     },
     {
         name: "Tailwind CSS",
-        icon: flutter,
+        icon: tailwind,
     },
     {
         name: "React",
-        icon: flutter,
+        icon: react,
     },
     {
         name: "Javascript",
-        icon: flutter,
+        icon: javascript,
     },
     {
         name: "HTML/CSS",
-        icon: flutter,
+        icon: html,
     },
     {
         name: "Typescript",
-        icon: flutter,
+        icon: typescript,
     },
     {
         name: "Java/C++",
-        icon: flutter,
+        icon: java,
     },
 ]

@@ -13,6 +13,7 @@ const Footer = () => {
           </p>
           <form className="flex w-full justify-center md:w-auto mt-6 md:mt-0">
             <TextField
+              id='email'
               type="email"
               aria-label="Email address"
               placeholder="Email address"
@@ -20,8 +21,24 @@ const Footer = () => {
               required
               className="w-60 min-w-0 shrink"
             />
+            <TextField
+              id='title'
+              type="email"
+              aria-label="Title"
+              placeholder="Title"
+              required
+              className="w-60 min-w-0 shrink ml-1"
+            />
+            <TextField
+              id='message'
+              type="email"
+              aria-label="Message"
+              placeholder="Message"
+              required
+              className="w-60 min-w-0 shrink ml-1"
+            />
             <Button type="submit" color="blue" className="ml-4 flex-none">
-              <span className="hidden lg:inline">Message Me</span>
+              <span className="hidden lg:inline">Send me a Message</span>
             </Button>
           </form>
         </div>

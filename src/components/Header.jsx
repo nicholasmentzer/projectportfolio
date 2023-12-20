@@ -50,7 +50,7 @@ const Header = () => {
                 </div>
                 {/* Buttons */}
                 <div className="flex items-center gap-6">
-                    <Button href="#" variant="outline" className='hidden lg:block'>Contact Me</Button>
+                    <Button href="#email" variant="outline" className='hidden lg:block'>Contact Me</Button>
                     <Button href="#" className='hidden lg:block'>LinkedIn</Button>
 
                     {/* Mobile Navlinks */}
