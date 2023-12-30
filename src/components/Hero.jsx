@@ -23,10 +23,6 @@ const Hero = () => {
                     </p>
                     <div className='mt-8 flex flex-wrap items-center gap-x-6 gap-4'>
                         <Image src={lehigh} alt='lehighLogo' className='w-32 h-auto' />
-                        <Button variant='outline' href='https://www.youtube.com/watch?v=13GjgIqHrRs'>
-                            <BsPlayCircle className='text-xl' />
-                            <span className='ml-2.5'>Lehigh Video</span>
-                        </Button>
                     </div>
                     <p className='mt-6 text-lg text-gray-600'>
                         Besides coding, I spend a lot of my time playing strategy video games (Fire Emblem, TFT, etc.) or discussing reality tv like Survivor!

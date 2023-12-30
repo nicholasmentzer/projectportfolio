@@ -11,36 +11,11 @@ const Footer = () => {
           <p className="text-xs text-gray-500">
             Created with care by Nicholas Mentzer
           </p>
-          <form className="flex w-full justify-center md:w-auto mt-6 md:mt-0">
-            <TextField
-              id='email'
-              type="email"
-              aria-label="Email address"
-              placeholder="Email address"
-              autoComplete="email"
-              required
-              className="w-60 min-w-0 shrink"
-            />
-            <TextField
-              id='title'
-              type="email"
-              aria-label="Title"
-              placeholder="Title"
-              required
-              className="w-60 min-w-0 shrink ml-1"
-            />
-            <TextField
-              id='message'
-              type="email"
-              aria-label="Message"
-              placeholder="Message"
-              required
-              className="w-60 min-w-0 shrink ml-1"
-            />
-            <Button type="submit" color="blue" className="ml-4 flex-none">
-              <span className="hidden lg:inline">Send me a Message</span>
-            </Button>
-          </form>
+          <div>
+            <p className="text-xs text-gray-400">
+              email: 0816ntm@gmail.com
+            </p>
+          </div>
         </div>
       </Container>
     </footer>

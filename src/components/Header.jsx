@@ -51,7 +51,7 @@ const Header = () => {
                 {/* Buttons */}
                 <div className="flex items-center gap-6">
                     <Button href="#email" variant="outline" className='hidden lg:block'>Contact Me</Button>
-                    <Button href="#" className='hidden lg:block'>LinkedIn</Button>
+                    <Button href="https://www.linkedin.com/in/nicholas-mentzer-9b4635281/" className='hidden lg:block'>LinkedIn</Button>
 
                     {/* Mobile Navlinks */}
                     <Popover className='lg:hidden'>
@@ -75,8 +75,8 @@ const Header = () => {
                                                     ))}
                                                 </div>
                                                 <div className='mt-8 flex flex-col gap-4'>
-                                                    <Button href="#" variant="outline">LinkedIn</Button>
-                                                    <Button href="#">LinkedIn</Button>
+                                                    <Button href="#email" variant="outline">Contact Me</Button>
+                                                    <Button href="https://www.linkedin.com/in/nicholas-mentzer-9b4635281/">LinkedIn</Button>
                                                 </div>
                                             </Popover.Panel>
                                         </>
