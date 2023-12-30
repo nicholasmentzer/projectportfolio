@@ -16,7 +16,7 @@ const Hero = () => {
                 <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
                     <Title id="about" title="About Me" className='text-4xl'/>
                     <p className='mt-6 text-lg text-gray-600'>
-                        Hello!! Thanks for visiting! I'm Nick, a web/app developer with a passion for crafting captivating and enjoyable user interactions.
+                        Hello!! Thanks for visiting! I&apos;m Nick, a web/app developer with a passion for crafting captivating and enjoyable user interactions.
                     </p>
                     <p className='mt-6 text-lg text-gray-600'>
                         I graduated from Lehigh University with a bachelors of science in Computer Science and Engineering in just over 3 years.
