@@ -10,6 +10,7 @@ import { TbMenu2 } from 'react-icons/tb'
 import { IoIosArrowUp } from 'react-icons/io'
 import { AnimatePresence, motion } from 'framer-motion';
 import { navData } from '@/constants'
+import { useRouter } from 'next/navigation'
 
 const MobileNavLinks = ({children, ...props}) => {
     return (
@@ -20,6 +21,7 @@ const MobileNavLinks = ({children, ...props}) => {
 };
 
 const Header = () => {
+  const router = useRouter();
   const [isScrolled, setIsScrolled] = useState(false);
   const handleScroll = () => {
     const scrollY = window.scrollY;
@@ -50,7 +52,7 @@ const Header = () => {
                 </div>
                 {/* Buttons */}
                 <div className="flex items-center gap-6">
-                    <Button href="#email" variant="outline" className='hidden lg:block'>Contact Me</Button>
+                    <Button variant="outline" className='hidden lg:block' href="#email">Contact Me</Button>
                     <Button href="https://www.linkedin.com/in/nicholas-mentzer-9b4635281/" className='hidden lg:block'>LinkedIn</Button>
 
                     {/* Mobile Navlinks */}
@@ -75,7 +77,7 @@ const Header = () => {
                                                     ))}
                                                 </div>
                                                 <div className='mt-8 flex flex-col gap-4'>
-                                                    <Button href="#email" variant="outline">Contact Me</Button>
+                                                    <Button variant="outline" href="#email">Contact Me</Button>
                                                     <Button href="www.linkedin.com/in/nicholas-mentzer-9b4635281">LinkedIn</Button>
                                                 </div>
                                             </Popover.Panel>

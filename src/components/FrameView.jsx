@@ -8,6 +8,7 @@ import brick from "@/images/brick.png";
 import github from "@/images/github.png";
 import nfc from "@/images/nfc.png";
 import react from "@/images/react.png";
+import flutter from "@/images/flutter.png";
 import Button from "./Button";
 
 const MotionAppScreenHeader = motion(AppScreen.Header);
@@ -165,16 +166,19 @@ function StocksScreen({ custom, animated = false }) {
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
         <div className="px-4 py-6">
-          
-            <Image 
-              src={github}
-              width={500}
-              height={500}
-              alt=""
-            />
-            <Button href="https://github.com/nicholasmentzer/projectportfolio" className="mt-6 rounded-lg px-3 py-2 text-center text-sm font-semibold text-white">
-              Go to GitHub
-            </Button>
+            <div className='flex justify-center mt-20'>
+              <Image 
+                src={github}
+                width={200}
+                height={200}
+                alt=""
+              />
+            </div>
+            <div className='flex justify-center'>
+              <Button href="https://github.com/nicholasmentzer/projectportfolio" className="mt-6 rounded-lg px-3 py-2 text-center text-sm font-semibold text-white">
+                Go to GitHub
+              </Button>
+            </div>
           
         </div>
       </MotionAppScreenBody>
@@ -188,25 +192,37 @@ function InvestScreen({ custom, animated = false }) {
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
         <AppScreen.Title>Internship Projects</AppScreen.Title>
         <AppScreen.Subtitle>
-          <span className="text-white">Two projects</span> started and worked on mainly by myself across two summers.
+          <span className="text-white">Two projects</span> started and worked on by myself or in a team across two summers.
         </AppScreen.Subtitle>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
         <div className="px-4 py-6">
           <div className="space-y-4">
-            <Image 
-              src={nfc}
-              width={100}
-              height={100}
-              alt=""
-            />
-            <p>test</p>
-            <Image 
-              src={react}
-              width={80}
-              height={80}
-              alt=""
-            />
+            <div className='flex justify-center'>
+              <Image 
+                src={flutter}
+                width={70}
+                height={20}
+                alt=""
+              />
+              <div className='w-10' />
+              <Image 
+                src={nfc}
+                width={100}
+                height={100}
+                alt=""
+              />
+            </div>
+            <p className='text-center'>One project used Flutter along with nfc integration</p>
+            <div className='flex justify-center'>
+              <Image 
+                src={react}
+                width={100}
+                height={100}
+                alt=""
+              />
+            </div>
+            <p className='text-center'>The other used React to create a frontend webpage</p>
           </div>
         </div>
       </MotionAppScreenBody>
