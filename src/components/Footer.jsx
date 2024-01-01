@@ -12,7 +12,7 @@ const Footer = () => {
             Created with care by Nicholas Mentzer
           </p>
           <div>
-            <p className="text-xs text-gray-400">
+            <p id='email' className="text-xs text-gray-400">
               email: 0816ntm@gmail.com
             </p>
           </div>

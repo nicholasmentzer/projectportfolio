@@ -4,4 +4,4 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Hi :D
 
-This is the repository that holds aaaaaall of my code for my project portfolio that you probably just came from!
+This is the repository that holds all of my code for my project portfolio that you probably just came from!

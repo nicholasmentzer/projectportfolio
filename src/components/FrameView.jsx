@@ -132,44 +132,6 @@ function DeviceTouchIcon(props) {
   );
 }
 
-/*function InviteScreen() {
-  return (
-    <div>
-      <Image 
-        src={app2}
-        width={500}
-        height={500}
-        alt=""
-      />
-    </div>
-  );
-}
-function StocksScreen() {
-  return (
-    <div>
-      <Image 
-        src={github}
-        width={500}
-        height={500}
-        alt=""
-      />
-    </div>
-  );
-}
-
-function InvestScreen() {
-  return (
-    <div>
-      <Image 
-        src={brick}
-        width={500}
-        height={500}
-        alt=""
-      />
-    </div>
-  );
-}*/
-
 function InviteScreen({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
@@ -210,7 +172,7 @@ function StocksScreen({ custom, animated = false }) {
               height={500}
               alt=""
             />
-            <Button href="github.com" className="mt-6 rounded-lg px-3 py-2 text-center text-sm font-semibold text-white">
+            <Button href="https://github.com/nicholasmentzer/projectportfolio" className="mt-6 rounded-lg px-3 py-2 text-center text-sm font-semibold text-white">
               Go to GitHub
             </Button>
           
@@ -256,21 +218,21 @@ export const features = [
   {
     name: "Lehigh CSE Capstone - Mobile Help Coach for College Students",
     description:
-      "My Capstone project at Lehigh had me as the lead developer, creating most of the frontend and backend code, for a new app that would serve as a social media / mental health and relaxation app for students in local universities.",
+      "I was the lead developer on a team of 3 in which we built a mental health app for college students.  Used Flutter/Dart to create features such as journaling, group communication, location-based social media-like systems, with Firebase integration for the backend.",
     icon: DeviceUserIcon,
     screen: InviteScreen,
   },
   {
     name: "This website!",
     description:
-      "What started as a passion project during my last semester at Lehigh morphed into this portfolio website that I created from scratch using next.js and tailwind css.",
+      "What started as a passion project during my last semester at Lehigh morphed into this portfolio website that I created from scratch.  It was created using next.js and tailwind css, both of which I learned as I went along specifically for this site and to have more tools in my arsenal moving forward.",
     icon: DeviceNotificationIcon,
     screen: StocksScreen,
   },
   {
     name: "Internship Projects",
     description:
-      "My internship at BrickSimple LLC had me work on two projects; one, a mobile contact card sharing app using NFC technology that I started and finished independently. The other, a revamped webpage for our client, a firearm detection and security company, which was created by myself and another head developer.",
+      "On one project, I built a mobile app to be used by employees of the company that allowed mobile business cards to be shared via NFC, QR, etc.  This was a solo project in which I was responsible for every aspect of the build using Flutter/Dart.  On the other project, I was part of a team in which I built a library of custom React styled components to create a new frontend interface for a company in firearm detection and control. I experienced the full range of the developmental process including weekly stand-ups, sprints, client meetings, testing and problem-solving.",
     icon: DeviceTouchIcon,
     screen: InvestScreen,
   },

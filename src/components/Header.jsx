@@ -76,7 +76,7 @@ const Header = () => {
                                                 </div>
                                                 <div className='mt-8 flex flex-col gap-4'>
                                                     <Button href="#email" variant="outline">Contact Me</Button>
-                                                    <Button href="https://www.linkedin.com/in/nicholas-mentzer-9b4635281/">LinkedIn</Button>
+                                                    <Button href="www.linkedin.com/in/nicholas-mentzer-9b4635281">LinkedIn</Button>
                                                 </div>
                                             </Popover.Panel>
                                         </>
