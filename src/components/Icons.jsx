@@ -11,41 +11,41 @@ import Image from "next/image";
 
 export function flutter(props) {
   return (
-    <Image src={flutterIcon} className='h-8 w-8' alt='flutterIcon' />
+    <Image src={flutterIcon} className='h-14 w-12' alt='flutterIcon' />
   );
 }
 export function next(props) {
   return (
-    <Image src={nextIcon} className='h-8 w-8' alt='nextIcon' />
+    <Image src={nextIcon} className='h-14 w-14' alt='nextIcon' />
   );
 }
 export function tailwind(props) {
   return (
-    <Image src={tailwindIcon} className='h-8 w-8' alt='tailwindIcon' />
+    <Image src={tailwindIcon} className='h-14 w-14' alt='tailwindIcon' />
   );
 }
 export function react(props) {
   return (
-    <Image src={reactIcon} className='h-8 w-8' alt='reactIcon' />
+    <Image src={reactIcon} className='h-14 w-16' alt='reactIcon' />
   );
 }
 export function javascript(props) {
   return (
-    <Image src={javascriptIcon} className='h-8 w-8' alt='jsIcon' />
+    <Image src={javascriptIcon} className='h-14 w-14' alt='jsIcon' />
   );
 }
 export function html(props) {
   return (
-    <Image src={htmlIcon} className='h-8 w-8' alt='htmlIcon' />
+    <Image src={htmlIcon} className='h-14 w-14' alt='htmlIcon' />
   );
 }
 export function typescript(props) {
   return (
-    <Image src={typescriptIcon} className='h-8 w-8' alt='tsIcon' />
+    <Image src={typescriptIcon} className='h-14 w-14' alt='tsIcon' />
   );
 }
 export function java(props) {
   return (
-    <Image src={javaIcon} className='h-8 w-8' alt='javaIcon' />
+    <Image src={javaIcon} className='h-14 w-14' alt='javaIcon' />
   );
 }

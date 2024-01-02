@@ -18,10 +18,12 @@ const Skills = () => {
           {skillData.map((item) => (
             <li
               key={item.name}
-              className="rounded-2xl border border-gray-200 hover:border-gray-300 p-8 group hover:bg-gray-100 duration-300"
+              className="rounded-2xl border bg-gray-600 border-gray-200 hover:border-gray-300 p-8 group hover:bg-gray-800/95 duration-300"
             >
-              <item.icon className="h-8 w-8" />
-              <h3 className="mt-6 font-semibold text-gray-900 group-hover:text-black duration-300">
+              <div className='flex justify-center'>
+                <item.icon className="h-14 w-14" />
+              </div>
+              <h3 className="mt-6 text-lg font-semibold text-white flex justify-center">
                 {item.name}
               </h3>
             </li>

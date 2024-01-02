@@ -9,7 +9,7 @@ const Feature = () => {
         <Container>
             <div>
                 <Title title="My Projects" className='text-white text-2xl'/>
-                <p className='mt-2 text-lg text-gray-400'>A list of some projects I have worked on over my time at college, in my internship, or in my own time. Some of these projects are protected, meaning some code and sometimes even screenshots are unable to be shared...</p>
+                <p className='mt-2 text-lg text-gray-400'>Here are just a few projects I've worked on during my time as a Lehigh undergrad, a BrickSimple intern, or just in my own time!</p>
             </div>
         </Container>
         {/*Desktop*/}

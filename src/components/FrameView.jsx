@@ -241,14 +241,14 @@ export const features = [
   {
     name: "This website!",
     description:
-      "What started as a passion project during my last semester at Lehigh morphed into this portfolio website that I created from scratch.  It was created using next.js and tailwind css, both of which I learned as I went along specifically for this site and to have more tools in my arsenal moving forward.",
+      "I developed this portfolio website as a way to demonstrate my coding capability (especially since much of the other work I've done is proprietary and cannot be shared), as well as a way to learn new skills to add to my repertoire.  Created from scratch, this site uses next.js and tailwind css, two fun new tools that served as extensions of things I have used previously while giving me better breadth of knowledge surrounding web development.",
     icon: DeviceNotificationIcon,
     screen: StocksScreen,
   },
   {
     name: "Internship Projects",
     description:
-      "On one project, I built a mobile app to be used by employees of the company that allowed mobile business cards to be shared via NFC, QR, etc.  This was a solo project in which I was responsible for every aspect of the build using Flutter/Dart.  On the other project, I was part of a team in which I built a library of custom React styled components to create a new frontend interface for a company in firearm detection and control. I experienced the full range of the developmental process including weekly stand-ups, sprints, client meetings, testing and problem-solving.",
+      "As a software development intern at BrickSimple for two consecutive summers, I gained valuable professional experience.  In 2023, I built a mobile app to be used by employees of the company that allowed mobile business cards to be shared via NFC, QR, etc.  This was a solo project in which I was responsible for every aspect of the build using Flutter/Dart. As for the other project in 2022, I was part of a team in which I built a library of custom React styled components to create a new frontend interface for a company in firearm detection and control. I experienced the full range of the developmental process including weekly stand-ups, sprints, client meetings, testing and problem-solving.",
     icon: DeviceTouchIcon,
     screen: InvestScreen,
   },
