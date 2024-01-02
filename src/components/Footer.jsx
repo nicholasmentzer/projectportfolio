@@ -25,7 +25,7 @@ const Footer = () => {
               email: 0816ntm@gmail.com
             </p>
             <p className="font-medium text-gray-500 text-center mb-5">
-              phone: 302 249 3519
+              phone: (302) 249-3519
             </p>
             <div className='flex justify-center'>
               <Button variant='outline' href="www.linkedin.com/in/nicholas-mentzer-9b4635281" className='mr-5'>LinkedIn</Button> <Button href='https://drive.google.com/file/d/1gVksQHRth45vZc78O2jpJwfiJSr31-Sl/view?usp=sharing'>My Resume</Button>

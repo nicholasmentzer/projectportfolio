@@ -9,7 +9,7 @@ const Feature = () => {
         <Container>
             <div>
                 <Title title="My Projects" className='text-white text-2xl'/>
-                <p className='mt-2 text-lg text-gray-400'>Here are just a few projects I've worked on during my time as a Lehigh undergrad, a BrickSimple intern, or just in my own time!</p>
+                <p className='mt-2 text-lg text-gray-400'>Here are just a few projects I&apos;ve worked on during my time as a Lehigh undergrad, a BrickSimple intern, or just in my own time!</p>
             </div>
         </Container>
         {/*Desktop*/}
