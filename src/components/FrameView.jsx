@@ -196,6 +196,11 @@ function SimulatorScreen({ custom, animated = false }) {
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
         <div className="px-4 py-6">
+          <div className='flex justify-center'>
+              <Button href="https://survivorsim.vercel.app" className="mt-6 rounded-lg px-3 py-2 text-center text-sm font-semibold text-white">
+                Go to the Simulator
+              </Button>
+            </div>
             <div className='flex justify-center mt-20'>
               <Image 
                 src={github}
@@ -205,7 +210,7 @@ function SimulatorScreen({ custom, animated = false }) {
               />
             </div>
             <div className='flex justify-center'>
-              <Button href="https://github.com/nicholasmentzer/" className="mt-6 rounded-lg px-3 py-2 text-center text-sm font-semibold text-white">
+              <Button href="https://github.com/nicholasmentzer/survivorsim" className="mt-6 rounded-lg px-3 py-2 text-center text-sm font-semibold text-white">
                 Go to GitHub
               </Button>
             </div>
