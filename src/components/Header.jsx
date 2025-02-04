@@ -54,7 +54,7 @@ const Header = () => {
                 <div className="flex items-center gap-6">
                     <Button variant="outline" className='hidden lg:block' href="#email">Contact Me</Button>
                     <Button variant='outline' href="https://www.linkedin.com/in/nicholas-mentzer-9b4635281/" className='hidden lg:block'>LinkedIn</Button>
-                    <Button className='hidden lg:block' href='https://drive.google.com/file/d/1gVksQHRth45vZc78O2jpJwfiJSr31-Sl/view?usp=sharing'>My Resume</Button>
+                    <Button className='hidden lg:block' href='https://drive.google.com/file/d/1zQuc1mOKYh_g1sjmJ5nxDkZtW86l9scQ/view?usp=sharing'>My Resume</Button>
 
                     {/* Mobile Navlinks */}
                     <Popover className='lg:hidden'>
@@ -80,7 +80,7 @@ const Header = () => {
                                                 <div className='mt-8 flex flex-col gap-4'>
                                                     <Button variant="outline" href="#email">Contact Me</Button>
                                                     <Button variant='outline' href="www.linkedin.com/in/nicholas-mentzer-9b4635281">LinkedIn</Button>
-                                                    <Button href='https://drive.google.com/file/d/1gVksQHRth45vZc78O2jpJwfiJSr31-Sl/view?usp=sharing'>My Resume</Button>
+                                                    <Button href='https://drive.google.com/file/d/1zQuc1mOKYh_g1sjmJ5nxDkZtW86l9scQ/view?usp=sharing'>My Resume</Button>
                                                 </div>
                                             </Popover.Panel>
                                         </>
