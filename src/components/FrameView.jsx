@@ -197,8 +197,9 @@ function SimulatorScreen({ custom, animated = false }) {
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
         <div className="px-4 py-6">
           <div className='flex justify-center'>
-              <Button href="https://survivorsim.vercel.app" className="mt-6 rounded-lg px-3 py-2 text-center text-sm font-semibold text-white">
-                Go to the Simulator
+              <Button href="https://www.thesurvivorchains.com" className="mt-6 rounded-lg px-3 py-2 text-center text-sm font-semibold text-white">
+                Head to my simulator!
+                wwww.thesurvivorchains.com
               </Button>
             </div>
             <div className='flex justify-center mt-20'>
