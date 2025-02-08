@@ -10,6 +10,7 @@ import nfc from "@/images/nfc.png";
 import react from "@/images/react.png";
 import flutter from "@/images/flutter.png";
 import aws from "@/images/aws.png"
+import chains from "@/images/chains.png"
 import Button from "./Button";
 
 const MotionAppScreenHeader = motion(AppScreen.Header);
@@ -204,9 +205,8 @@ function SimulatorScreen({ custom, animated = false }) {
             </div>
             <div className='flex justify-center mt-20'>
               <Image 
-                src={github}
+                src={chains}
                 width={200}
-                height={200}
                 alt=""
               />
             </div>
