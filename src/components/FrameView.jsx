@@ -244,7 +244,7 @@ function InternScreen2({ custom, animated = false }) {
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
         <AppScreen.Title>Firearm Deteciton Website</AppScreen.Title>
         <AppScreen.Subtitle>
-          A two person project to redesign our client's outdated website.
+          A two person project to redesign our client&apos;s outdated website.
         </AppScreen.Subtitle>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
