@@ -9,8 +9,10 @@ import github from "@/images/github.png";
 import nfc from "@/images/nfc.png";
 import react from "@/images/react.png";
 import flutter from "@/images/flutter.png";
-import aws from "@/images/aws.png"
+import bcards from "@/images/bcards.jpeg";
+import aws from "@/images/aws.jpg"
 import chains from "@/images/chains.png"
+import gun from "@/images/gun.png"
 import Button from "./Button";
 
 const MotionAppScreenHeader = motion(AppScreen.Header);
@@ -159,27 +161,23 @@ function InviteScreen({ custom, animated = false }) {
     </AppScreen>
   );
 }
+
 function StocksScreen({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
         <AppScreen.Title>Project Portfolio Website</AppScreen.Title>
-        <AppScreen.Subtitle>Click the link to access my code database!</AppScreen.Subtitle>
+        <AppScreen.Subtitle>Created with Next.js</AppScreen.Subtitle>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
         <div className="px-4 py-6">
             <div className='flex justify-center mt-20'>
               <Image 
                 src={github}
-                width={200}
-                height={200}
+                width={500}
+                height={500}
                 alt=""
               />
-            </div>
-            <div className='flex justify-center'>
-              <Button href="https://github.com/nicholasmentzer/projectportfolio" className="mt-6 rounded-lg px-3 py-2 text-center text-sm font-semibold text-white">
-                Go to GitHub
-              </Button>
             </div>
           
         </div>
@@ -192,28 +190,19 @@ function SimulatorScreen({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-        <AppScreen.Title>My Survivor Simulator</AppScreen.Title>
-        <AppScreen.Subtitle>Click the link to access my code database!</AppScreen.Subtitle>
+        <AppScreen.Title>My Survivor Simulator Website</AppScreen.Title>
+        <AppScreen.Subtitle>Created with Next.js, built solely by me for my own enjoyment!</AppScreen.Subtitle>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
         <div className="px-4 py-6">
           <div className='flex justify-center'>
-              <Button href="https://www.thesurvivorchains.com" className="mt-6 rounded-lg px-3 py-2 text-center text-sm font-semibold text-white">
-                Head to my simulator!
-                wwww.thesurvivorchains.com
-              </Button>
-            </div>
-            <div className='flex justify-center mt-20'>
-              <Image 
-                src={chains}
-                width={200}
-                alt=""
-              />
             </div>
             <div className='flex justify-center'>
-              <Button href="https://github.com/nicholasmentzer/survivorsim" className="mt-6 rounded-lg px-3 py-2 text-center text-sm font-semibold text-white">
-                Go to GitHub
-              </Button>
+              <Image 
+                src={chains}
+                width={500}
+                alt=""
+              />
             </div>
           
         </div>
@@ -222,13 +211,13 @@ function SimulatorScreen({ custom, animated = false }) {
   );
 }
 
-function InvestScreen({ custom, animated = false }) {
+function InternScreen({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-        <AppScreen.Title>Internship Projects</AppScreen.Title>
+        <AppScreen.Title>Business Card Sharing App</AppScreen.Title>
         <AppScreen.Subtitle>
-          <span className="text-white">Two projects</span> started and worked on by myself or in a team across two summers.
+          Developed solely by myself for use by the entire company.
         </AppScreen.Subtitle>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
@@ -236,29 +225,39 @@ function InvestScreen({ custom, animated = false }) {
           <div className="space-y-4">
             <div className='flex justify-center'>
               <Image 
-                src={flutter}
-                width={70}
-                height={20}
-                alt=""
-              />
-              <div className='w-10' />
-              <Image 
-                src={nfc}
-                width={100}
-                height={100}
+                src={bcards}
+                width={500}
+                height={500}
                 alt=""
               />
             </div>
-            <p className='text-center'>One project used Flutter along with nfc integration</p>
+          </div>
+        </div>
+      </MotionAppScreenBody>
+    </AppScreen>
+  );
+}
+
+function InternScreen2({ custom, animated = false }) {
+  return (
+    <AppScreen className="w-full">
+      <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
+        <AppScreen.Title>Firearm Deteciton Website</AppScreen.Title>
+        <AppScreen.Subtitle>
+          A two person project to redesign our client's outdated website.
+        </AppScreen.Subtitle>
+      </MotionAppScreenHeader>
+      <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
+        <div className="px-4 py-6">
+          <div className="space-y-4">
             <div className='flex justify-center'>
               <Image 
-                src={react}
-                width={100}
-                height={100}
+                src={gun}
+                width={500}
+                height={500}
                 alt=""
               />
             </div>
-            <p className='text-center'>The other used React to create a frontend webpage</p>
           </div>
         </div>
       </MotionAppScreenBody>
@@ -270,33 +269,21 @@ function FullTimeScreen({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-        <AppScreen.Title>Internship Projects</AppScreen.Title>
+        <AppScreen.Title>Student Health & Wellness App</AppScreen.Title>
         <AppScreen.Subtitle>
-          A year long project started and worked on in a team of 3 developers for a renowned University.
+          A year long project started and worked on in a team of 3 developers for a renowned University, giving me experience with a variety of other tools, including AWS integration and external database connections.
         </AppScreen.Subtitle>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
         <div className="px-4 py-6">
-          <div className="space-y-4">
-            <div className='flex justify-center'>
-              <Image 
-                src={flutter}
-                width={70}
-                height={20}
-                alt=""
-              />
-            </div>
-            <p className='text-center'>This project was built from the ground up using Flutter</p>
             <div className='flex justify-center'>
               <Image 
                 src={aws}
-                width={70}
-                height={30}
+                width={500}
+                height={500}
                 alt=""
               />
             </div>
-            <p className='text-center'>It gave me experience with a variety of other tools, including AWS integration and external database connections</p>
-          </div>
         </div>
       </MotionAppScreenBody>
     </AppScreen>
@@ -305,11 +292,44 @@ function FullTimeScreen({ custom, animated = false }) {
 
 export const features = [
   {
-    name: "Lehigh CSE Capstone - Mobile Help Coach for College Students",
+    name: "Student Health & Wellness App - Full-Time Development",
+    description:
+      "Worked as part of a three-person development team to create a ground-breaking Flutter app for a renowned California university. My focus was on translating Figma designs into responsive and functional interfaces with an emphasis on ease-of-use and visual clarity. Experience was gained in communicating between various databases and backends and understanding the deployment cycle through AWS.",
+    icon: DeviceTouchIcon,
+    screen: FullTimeScreen,
+    links: [],
+  },
+  {
+    name: "Survivor Simulator - Personal Project",
+    description:
+      "I don't only code for work! In my spare time I also use my skills to create things that are more personalized to my interests and would be fun to use in everyday life. For example, I recently started an online simulator for the reality competition show \"Survivor\", which I have linked to the left.  Doing side projects like these not only allows me to brush up on skills and frameworks that I may not be currently using in my work life projects, but also are able to showcase my talents in a more unique, exciting, and most importantly, fun to create way!",
+    icon: DeviceNotificationIcon,
+    screen: SimulatorScreen,
+    links: ["https://github.com/nicholasmentzer/survivorsim", "https://www.thesurvivorchains.com"],
+  },
+  {
+    name: "Business Card App - Internship Project",
+    description:
+      "As a software development intern at BrickSimple for two consecutive summers, I gained valuable professional experience.  In 2023, I built a mobile app to be used by employees of the company that allowed mobile business cards to be shared via NFC, QR, etc.  This was a solo project in which I was responsible for every aspect of the build using Flutter/Dart. As for the other project in 2022, I was part of a team in which I built a library of custom React styled components to create a new frontend interface for a company in firearm detection and control. I experienced the full range of the developmental process including weekly stand-ups, sprints, client meetings, testing and problem-solving.",
+    icon: DeviceTouchIcon,
+    screen: InternScreen,
+    links: [],
+  },
+  {
+    name: "Firearm Control and Detection Website - Internship Project",
+    description:
+      "As a software development intern at BrickSimple for two consecutive summers, I gained valuable professional experience.  In 2023, I built a mobile app to be used by employees of the company that allowed mobile business cards to be shared via NFC, QR, etc.  This was a solo project in which I was responsible for every aspect of the build using Flutter/Dart. As for the other project in 2022, I was part of a team in which I built a library of custom React styled components to create a new frontend interface for a company in firearm detection and control. I experienced the full range of the developmental process including weekly stand-ups, sprints, client meetings, testing and problem-solving.",
+    icon: DeviceTouchIcon,
+    screen: InternScreen2,
+    links: [],
+  },
+  {
+    name: "Mobile Help Coach for College Students - Lehigh CSE Capstone",
     description:
       "I was the lead developer on a team of 3 in which we built a mental health app for college students.  Used Flutter/Dart to create features such as journaling, group communication, location-based social media-like systems, with Firebase integration for the backend.",
     icon: DeviceUserIcon,
     screen: InviteScreen,
+    links: [],
   },
   {
     name: "This website!",
@@ -317,26 +337,6 @@ export const features = [
       "I developed this portfolio website as a way to demonstrate my coding capability (especially since much of the other work I've done is proprietary and cannot be shared), as well as a way to learn new skills to add to my repertoire.  Created from scratch, this site uses next.js and tailwind css, two fun new tools that served as extensions of things I have used previously while giving me better breadth of knowledge surrounding web development.",
     icon: DeviceNotificationIcon,
     screen: StocksScreen,
-  },
-  {
-    name: "Internship Projects",
-    description:
-      "As a software development intern at BrickSimple for two consecutive summers, I gained valuable professional experience.  In 2023, I built a mobile app to be used by employees of the company that allowed mobile business cards to be shared via NFC, QR, etc.  This was a solo project in which I was responsible for every aspect of the build using Flutter/Dart. As for the other project in 2022, I was part of a team in which I built a library of custom React styled components to create a new frontend interface for a company in firearm detection and control. I experienced the full range of the developmental process including weekly stand-ups, sprints, client meetings, testing and problem-solving.",
-    icon: DeviceTouchIcon,
-    screen: InvestScreen,
-  },
-  {
-    name: "Full-Time Development",
-    description:
-      "Throughout 2024 I was part of a 3 developer team at BrickSimple, working on a new Flutter app created from the ground up for a renowned University. This app, which served as a mental health resource for students, equipped me with many new experiences and tools moving forward, such as communicating between various databases and backends, understanding the deployment cycle through AWS, and generally using the top-of-the-line features of Flutter required to make this app the best it could be.",
-    icon: DeviceTouchIcon,
-    screen: FullTimeScreen,
-  },
-  {
-    name: "Personal Projects",
-    description:
-      "I don't only code for work! In my spare time I also use my skills to create things that are more personalized to my interests and would be fun to use in everyday life. For example, I recently started an online simulator for the reality competition show \"Survivor\", which I have linked to the left.  Doing side projects like these not only allows me to brush up on skills and frameworks that I may not be currently using in my work life projects, but also are able to showcase my talents in a more unique, exciting, and most importantly, fun to create way!",
-    icon: DeviceNotificationIcon,
-    screen: SimulatorScreen,
+    links: ["https://github.com/nicholasmentzer/projectportfolio"],
   },
 ];

@@ -8,7 +8,7 @@ const Skills = () => {
     <section id='skills' aria-label="My skills and experience" className='py-20 sm:py-32'>
         <Container>
             <div className='max-w-2xl mx-auto sm:text-center'>
-                <Title title='My Skillset' className='text-2xl' />
+                <Title title='My Skillset' className='text-4xl' />
                 <p className='mt-2 text-lg text-gray-600'>These are the skills and tools I have learned through my college, internship, and personal research experiences!</p>
             </div>
             <ul
