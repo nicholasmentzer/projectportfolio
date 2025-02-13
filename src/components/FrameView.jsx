@@ -310,7 +310,7 @@ export const features = [
   {
     name: "Business Card App - Internship Project",
     description:
-      "As a software development intern at BrickSimple for two consecutive summers, I gained valuable professional experience.  In 2023, I built a mobile app to be used by employees of the company that allowed mobile business cards to be shared via NFC, QR, etc.  This was a solo project in which I was responsible for every aspect of the build using Flutter/Dart. As for the other project in 2022, I was part of a team in which I built a library of custom React styled components to create a new frontend interface for a company in firearm detection and control. I experienced the full range of the developmental process including weekly stand-ups, sprints, client meetings, testing and problem-solving.",
+      "As a software development intern at BrickSimple for two consecutive summers, I gained valuable professional experience.  In 2023, I built a mobile app to be used by employees of the company that allowed mobile business cards to be shared via NFC, QR, etc.  This was a solo project in which I was responsible for every aspect of the build using Flutter/Dart.",
     icon: DeviceTouchIcon,
     screen: InternScreen,
     links: [],
@@ -318,7 +318,7 @@ export const features = [
   {
     name: "Firearm Control and Detection Website - Internship Project",
     description:
-      "As a software development intern at BrickSimple for two consecutive summers, I gained valuable professional experience.  In 2023, I built a mobile app to be used by employees of the company that allowed mobile business cards to be shared via NFC, QR, etc.  This was a solo project in which I was responsible for every aspect of the build using Flutter/Dart. As for the other project in 2022, I was part of a team in which I built a library of custom React styled components to create a new frontend interface for a company in firearm detection and control. I experienced the full range of the developmental process including weekly stand-ups, sprints, client meetings, testing and problem-solving.",
+      "As part of my internship for 2022, I was part of a team in which I built a library of custom React styled components to create a new frontend interface for a company in firearm detection and control. I experienced the full range of the developmental process including weekly stand-ups, sprints, client meetings, testing and problem-solving.",
     icon: DeviceTouchIcon,
     screen: InternScreen2,
     links: [],
