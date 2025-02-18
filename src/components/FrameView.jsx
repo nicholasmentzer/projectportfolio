@@ -9,7 +9,7 @@ import github from "@/images/github.png";
 import nfc from "@/images/nfc.png";
 import react from "@/images/react.png";
 import flutter from "@/images/flutter.png";
-import bcards from "@/images/bcards.jpeg";
+import bcards from "@/images/bcards.png";
 import aws from "@/images/aws.jpg"
 import chains from "@/images/chains.png"
 import gun from "@/images/gun.png"
