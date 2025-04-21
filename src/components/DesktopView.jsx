@@ -69,12 +69,12 @@ const DesktopView = () => {
                       
                       <div className='flex justify-center flex-col'>
                         { feature.links.length > 0 ?
-                          <Button href={feature.links[0]} className="z-50 mt-6 rounded-lg px-3 py-2 text-center text-sm font-semibold text-gray-700 bg-gray-900 hover:bg-gray-950">
+                          <Button href={feature.links[0]} target="_blank" rel="noopener noreferrer" className="z-50 mt-6 rounded-lg px-3 py-2 text-center text-sm font-semibold text-gray-700 bg-gray-900 hover:bg-gray-950">
                             Go to the GitHub repository!
                           </Button> : <></>
                         }
                         { feature.links.length > 1 ?
-                          <Button href={feature.links[1]} className="z-50 mt-6 rounded-lg px-3 py-2 text-center text-sm font-semibold text-gray-700 bg-gray-900 hover:bg-gray-950">
+                          <Button href={feature.links[1]} target="_blank" rel="noopener noreferrer" className="z-50 mt-6 rounded-lg px-3 py-2 text-center text-sm font-semibold text-gray-700 bg-gray-900 hover:bg-gray-950">
                             Go to the website!
                           </Button> : <></>
                         }
