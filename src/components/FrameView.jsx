@@ -302,7 +302,7 @@ export const features = [
   {
     name: "Survivor Simulator - Personal Project",
     description:
-      "I don't only code for work! In my spare time I also use my skills to create things that are more personalized to my interests and would be fun to use in everyday life. For example, I recently started an online simulator for the reality competition show \"Survivor\", which I have linked to the left.  Doing side projects like these not only allows me to brush up on skills and frameworks that I may not be currently using in my work life projects, but also are able to showcase my talents in a more unique, exciting, and most importantly, fun to create way!",
+      "An interactive online simulator inspired by the reality competition show Survivor, built with Next.js. This ongoing personal project allows me to explore creative web development outside of my professional work, while reinforcing skills in React-based frameworks, state management, and UI/UX design. Side projects like this offer a space to experiment, learn, and express my passion for building engaging digital experiences in a fun and meaningful way.",
     icon: DeviceNotificationIcon,
     screen: SimulatorScreen,
     links: ["https://github.com/nicholasmentzer/survivorsim", "https://www.thesurvivorchains.com"],
