@@ -310,7 +310,7 @@ export const features = [
   {
     name: "Business Card App - Internship Project",
     description:
-      "As a software development intern at BrickSimple for two consecutive summers, I gained valuable professional experience.  In 2023, I built a mobile app to be used by employees of the company that allowed mobile business cards to be shared via NFC, QR, etc.  This was a solo project in which I was responsible for every aspect of the build using Flutter/Dart.",
+      "During my 2023 summer internship at BrickSimple LLC, I independently designed and developed a cross-platform mobile application using Flutter/Dart. The app enabled employees to share digital business cards through NFC, QR codes, and other contactless methods. As the sole developer on the project, I was responsible for every aspect of the build - from UI/UX design and state management to backend integration and deployment. The final product provided a streamlined, modern solution for professional contact sharing within the organization.",
     icon: DeviceTouchIcon,
     screen: InternScreen,
     links: [],
@@ -318,7 +318,7 @@ export const features = [
   {
     name: "Firearm Control and Detection Website - Internship Project",
     description:
-      "As part of my internship for 2022, I was part of a team in which I built a library of custom React styled components to create a new frontend interface for a company in firearm detection and control. I experienced the full range of the developmental process including weekly stand-ups, sprints, client meetings, testing and problem-solving.",
+      "In the summer of 2022, I interned at BrickSimple LLC as part of a team tasked with developing a new frontend interface for a client specializing in firearm detection and control. My primary contribution was building a reusable library of custom-styled React components to support the application’s UI. Throughout the project, I participated in the full development lifecycle, including agile workflows such as weekly stand-ups, sprint planning, client meetings, and iterative testing. This experience strengthened my skills in collaborative development, responsive design, and problem-solving in a real-world production environment.",
     icon: DeviceTouchIcon,
     screen: InternScreen2,
     links: [],
@@ -326,7 +326,7 @@ export const features = [
   {
     name: "Mobile Help Coach for College Students - Lehigh CSE Capstone",
     description:
-      "I was the lead developer on a team of 3 in which we built a mental health app for college students.  Used Flutter/Dart to create features such as journaling, group communication, location-based social media-like systems, with Firebase integration for the backend.",
+      "As Lead Developer for my senior capstone project at Lehigh University, I helped design and build a full-stack mental health application tailored to the needs of college students. The app featured tools for journaling, group communication, and a location-based social feed to foster community support and engagement. I oversaw system design, front-end architecture, and team coordination, working primarily with Flutter, Dart, and cloud-based services to deliver a responsive and scalable solution. Through this and other multi-semester projects, I developed a strong foundation in software engineering principles, cross-functional teamwork, and end-to-end product development.",
     icon: DeviceUserIcon,
     screen: InviteScreen,
     links: [],
@@ -334,7 +334,7 @@ export const features = [
   {
     name: "This website!",
     description:
-      "I developed this portfolio website as a way to demonstrate my coding capability (especially since much of the other work I've done is proprietary and cannot be shared), as well as a way to learn new skills to add to my repertoire.  Created from scratch, this site uses next.js and tailwind css, two fun new tools that served as extensions of things I have used previously while giving me better breadth of knowledge surrounding web development.",
+      "I developed this portfolio website from the ground up as both a platform to showcase my coding skills and a learning opportunity to expand my technical toolkit. Since much of my previous work is proprietary and cannot be publicly shared, this site serves as a tangible representation of my abilities. Built using Next.js and Tailwind CSS, the project allowed me to deepen my understanding of modern web development practices while exploring tools that complemented my existing experience. It also gave me a chance to experiment with performance optimization, responsive design, and component-based architecture in a personal and creative context.",
     icon: DeviceNotificationIcon,
     screen: StocksScreen,
     links: ["https://github.com/nicholasmentzer/projectportfolio"],

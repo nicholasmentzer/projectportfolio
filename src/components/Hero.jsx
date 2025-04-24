@@ -19,7 +19,7 @@ const Hero = () => {
                         Hello!! Thanks for visiting! I&apos;m Nick, a web/app developer with a passion for crafting captivating and enjoyable user interactions.
                     </p>
                     <p className='mt-6 text-lg text-gray-600'>
-                        I graduated from Lehigh University with a bachelors of science in Computer Science and Engineering in just over 3 years and have nearly
+                        I graduated from Lehigh University with a Bachelor of Science degree in Computer Science & Engineering in just over 3 years and have nearly
                         two years of professional experience in developing web applications for
                         companies in sectors ranging from mental health applications to firearm
                         detection and control.
