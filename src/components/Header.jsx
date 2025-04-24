@@ -80,7 +80,7 @@ const Header = () => {
                                                 <div className='mt-8 flex flex-col gap-4'>
                                                     <Button variant="outline" href="#email">Contact Me</Button>
                                                     <Button variant='outline' href="www.linkedin.com/in/nicholas-mentzer-9b4635281">LinkedIn</Button>
-                                                    <Button href='https://drive.google.com/file/d/1--loG5BwWEJsJIRi8Bbdr_BuAVtqtMuT/view?usp=sharing'>My Resume</Button>
+                                                    <Button href='https://drive.google.com/file/d/1--loG5BwWEJsJIRi8Bbdr_BuAVtqtMuT/view?usp=sharing' target="_blank" rel="noopener noreferrer" >My Resume</Button>
                                                 </div>
                                             </Popover.Panel>
                                         </>
