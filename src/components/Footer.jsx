@@ -28,7 +28,7 @@ const Footer = () => {
               phone: (302) 249-3519
             </p>
             <div className='flex justify-center'>
-              <Button variant='outline' href="www.linkedin.com/in/nicholas-mentzer-9b4635281" className='mr-5'>LinkedIn</Button> <Button href='https://drive.google.com/file/d/1--loG5BwWEJsJIRi8Bbdr_BuAVtqtMuT/view?usp=sharing' target="_blank" rel="noopener noreferrer" >My Resume</Button>
+              <Button variant='outline' href="www.linkedin.com/in/nicholas-mentzer-9b4635281" className='mr-5' target="_blank" rel="noopener noreferrer">LinkedIn</Button> <Button href='https://drive.google.com/file/d/1--loG5BwWEJsJIRi8Bbdr_BuAVtqtMuT/view?usp=sharing' target="_blank" rel="noopener noreferrer" >My Resume</Button>
             </div>
           </div>
         </div>

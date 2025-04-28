@@ -52,9 +52,9 @@ const Header = () => {
                 </div>
                 {/* Buttons */}
                 <div className="flex items-center gap-6">
-                    <Button variant="outline" className='hidden lg:block' href="#email">Contact Me</Button>
-                    <Button variant='outline' href="https://www.linkedin.com/in/nicholas-mentzer-9b4635281/" className='hidden lg:block'>LinkedIn</Button>
-                    <Button className='hidden lg:block' href='https://drive.google.com/file/d/1--loG5BwWEJsJIRi8Bbdr_BuAVtqtMuT/view?usp=sharing'>My Resume</Button>
+                    <Button variant="outline" className='hidden lg:block' href="#email" target="_blank" rel="noopener noreferrer">Contact Me</Button>
+                    <Button variant='outline' href="https://www.linkedin.com/in/nicholas-mentzer-9b4635281/" className='hidden lg:block' target="_blank" rel="noopener noreferrer">LinkedIn</Button>
+                    <Button className='hidden lg:block' href='https://drive.google.com/file/d/1--loG5BwWEJsJIRi8Bbdr_BuAVtqtMuT/view?usp=sharing' target="_blank" rel="noopener noreferrer">My Resume</Button>
 
                     {/* Mobile Navlinks */}
                     <Popover className='lg:hidden'>
@@ -78,8 +78,8 @@ const Header = () => {
                                                     ))}
                                                 </div>
                                                 <div className='mt-8 flex flex-col gap-4'>
-                                                    <Button variant="outline" href="#email">Contact Me</Button>
-                                                    <Button variant='outline' href="www.linkedin.com/in/nicholas-mentzer-9b4635281">LinkedIn</Button>
+                                                    <Button variant="outline" href="#email" target="_blank" rel="noopener noreferrer">Contact Me</Button>
+                                                    <Button variant='outline' href="www.linkedin.com/in/nicholas-mentzer-9b4635281" target="_blank" rel="noopener noreferrer">LinkedIn</Button>
                                                     <Button href='https://drive.google.com/file/d/1--loG5BwWEJsJIRi8Bbdr_BuAVtqtMuT/view?usp=sharing' target="_blank" rel="noopener noreferrer" >My Resume</Button>
                                                 </div>
                                             </Popover.Panel>
