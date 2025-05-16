@@ -35,96 +35,85 @@ const DesktopView = () => {
     );
 
   return (
-    <Tab.Group as="div" className='grid grid-cols-12 items-center gap-8 lg:gap-16 xl:gap-24 px-6' selectedIndex={selectedIndex} onChange={onChange} vertical>
-        <Tab.List className='relative z-10 order-last col-span-6 space-y-6'>
-          <button 
-              onClick={() => {setPage(0); setSelectedIndex(0);}} 
-              className={`absolute top-1/2 left-[-4rem] transform -translate-y-1/2 p-2 rounded-full transition-all ${
-                  page === 0 ? 'opacity-50 cursor-not-allowed' : ''
-              }`}
-              disabled={page === 0}
-          >
-              <ChevronLeftIcon className="w-6 h-6 text-white" />
-          </button>
+    <Tab.Group as="div" className='grid grid-cols-12 items-center gap-16 lg:gap-20 xl:gap-24 px-6' selectedIndex={selectedIndex} onChange={onChange} vertical>
+      <div className="relative grid grid-cols-12 gap-16 px-6 py-10 lg:gap-20 xl:gap-24">
+        <Tab.List className='col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6'>
+          {features.map((feature, index) => (
+            <div
+              key={feature.name}
+              className="relative rounded-2xl bg-gray-800/50 hover:bg-gray-800/70 transition-all p-6"
+            >
+              {index === selectedIndex && (
+                <motion.div
+                  layoutId="activeBackground"
+                  className="absolute inset-0 rounded-2xl bg-gray-800"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.2 }}
+                />
+              )}
+              <div className="relative z-10">
+                <feature.icon className="h-8 w-8 text-white" />
+                <h3 className="mt-4 text-lg font-semibold text-white">
+                  <Tab className="text-left [&:not(:focus-visible)]:focus:outline-none outline-none">
+                    <span className="absolute inset-0 rounded-2xl" />
+                    {feature.name}
+                  </Tab>
+                </h3>
+                <p className="mt-2 text-sm text-gray-300">{feature.description}</p>
 
-          {displayedFeatures.map((feature, featureIndex) => {
-              if(page === 1) {featureIndex = featureIndex + 3;}
-              return (<><div key={feature.name} className='relative rounded-2xl transition-colors hover:bg-gray-800/30'>
-                  {page === 0 ? featureIndex === selectedIndex && (
-                      <motion.div layoutId='activeBackground' className='absolute inset-0 bg-gray-800' initial={{ borderRadius: 16 }} />
-                  ) : featureIndex === selectedIndex+3 && (
-                    <motion.div layoutId='activeBackground' className='absolute inset-0 bg-gray-800' initial={{ borderRadius: 16 }} />
-                )}
-                  <div className='relative z-10 p-8'>
-                      <feature.icon className='h-8 w-8' />
-                      <h3 className='mt-6 text-lg font-semibold text-white'>
-                          <Tab className='text-left [&:not(:focus-visible)]:focus:outline-none outline-none'>
-                              <span className='absolute inset-0 rounded-2xl' />
-                              {feature.name}
-                          </Tab>
-                      </h3>
-                      <p className='mt-2 text-sm text-gray-400'>
-                          {feature.description}
-                      </p>
-                      
-                      <div className='flex justify-center flex-col'>
-                        { feature.links.length > 0 ?
-                          <Button href={feature.links[0]} target="_blank" rel="noopener noreferrer" className="z-50 mt-6 rounded-lg px-3 py-2 text-center text-sm font-semibold text-gray-700 bg-gray-900 hover:bg-gray-950">
-                            Go to the GitHub repository!
-                          </Button> : <></>
-                        }
-                        { feature.links.length > 1 ?
-                          <Button href={feature.links[1]} target="_blank" rel="noopener noreferrer" className="z-50 mt-6 rounded-lg px-3 py-2 text-center text-sm font-semibold text-gray-700 bg-gray-900 hover:bg-gray-950">
-                            Go to the website!
-                          </Button> : <></>
-                        }
-                      </div>
-                  </div>
+                <div className="mt-4 flex flex-col gap-2">
+                  {feature.links[0] && (
+                    <Button
+                      href={feature.links[0]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="z-50 text-sm px-3 py-2 font-semibold bg-gray-900 hover:bg-gray-950"
+                    >
+                      GitHub
+                    </Button>
+                  )}
+                  {feature.links[1] && (
+                    <Button
+                      href={feature.links[1]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="z-50 text-sm px-3 py-2 font-semibold bg-gray-900 hover:bg-gray-950"
+                    >
+                      Website
+                    </Button>
+                  )}
+                </div>
               </div>
-              
-              </>);
-            })}
-
-          <button 
-              onClick={() => {setPage(1); setSelectedIndex(0);}} 
-              className={`absolute top-1/2 right-[-4rem] transform -translate-y-1/2 p-2 rounded-full transition-all ${
-                  page === 1 ? 'opacity-50 cursor-not-allowed' : ''
-              }`}
-              disabled={page === 1}
-          >
-              <ChevronRightIcon className="w-6 h-6 text-white" />
-          </button>
+            </div>
+          ))}
         </Tab.List>
-        <div className='relative col-span-6'>
-            <div className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-0'>
-                <CircleBackground color='gold' className='animate-spin-slower' />
+
+        <div className="col-span-4 sticky top-60 h-[500px] flex flex-col items-center">
+          <div className="relative w-full max-w-xs mx-auto">
+            <div className="absolute inset-0 flex items-center justify-center -z-10">
+              <CircleBackground color="gold" className="animate-spin-slower" />
             </div>
-            <div className='z-10 mx-auto w-full max-w-[366px]'>
-              <PhoneFrame className="z-10 mx-auto w-full max-w-[366px]">
-                <Tab.Panels as={Fragment}>
-                  <AnimatePresence
-                    initial={false}
-                    custom={{ isForwards, changeCount }}
-                  >
-                    {
-                        features.map((feature, featureIndex) => 
-                            page === 0 ? selectedIndex === featureIndex ? (
-                                <Tab.Panel static key={feature.name + changeCount} className="col-start-1 row-start-1 flex focus:outline-offset-[32px] [&:not(:focus-visible)]:focus:outline-none">
-                                    <feature.screen animated custom={{ isForwards, changeCount }} />
-                                </Tab.Panel>
-                            ) : null
-                            : selectedIndex +3 === featureIndex ? (
-                              <Tab.Panel static key={feature.name + changeCount} className="col-start-1 row-start-1 flex focus:outline-offset-[32px] [&:not(:focus-visible)]:focus:outline-none">
-                                  <feature.screen animated custom={{ isForwards, changeCount }} />
-                              </Tab.Panel>
-                          ) : null
-                        )
-                    }
-                  </AnimatePresence>
-                </Tab.Panels>
-              </PhoneFrame>
-            </div>
+            <PhoneFrame className="w-full">
+              <Tab.Panels as={Fragment}>
+                <AnimatePresence initial={false} custom={{ isForwards, changeCount }}>
+                  {features.map((feature, index) =>
+                    index === selectedIndex ? (
+                      <Tab.Panel
+                        static
+                        key={feature.name + changeCount}
+                        className="col-start-1 row-start-1 flex focus:outline-none"
+                      >
+                        <feature.screen animated custom={{ isForwards, changeCount }} />
+                      </Tab.Panel>
+                    ) : null
+                  )}
+                </AnimatePresence>
+              </Tab.Panels>
+            </PhoneFrame>
+          </div>
         </div>
+      </div>
     </Tab.Group>
   )
 }
