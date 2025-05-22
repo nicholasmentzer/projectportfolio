@@ -162,16 +162,10 @@ export const MobileView = () => {
                 className="w-full flex-none snap-center px-4 sm:px-6"
               >
                 <div className="relative transform overflow-hidden rounded-2xl bg-gray-800 px-5 py-6">
-                  <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <CircleBackground
-                      color="gold"
-                      className="animate-spin-slower"
-                    />
-                  </div>
                   <PhoneFrame className="relative mx-auto w-full max-w-[366px]">
                     <feature.screen />
                   </PhoneFrame>
-                  <div className="absolute inset-x-0 bottom-0 bg-gray-800/95 p-6 backdrop-blur sm:p-10">
+                  <div className=" bg-gray-800/95 p-6 backdrop-blur sm:p-10">
                     <feature.icon className="h-8 w-8" />
                     <h3 className="mt-6 text-sm font-semibold text-white sm:text-lg">
                       {feature.name}
@@ -179,6 +173,28 @@ export const MobileView = () => {
                     <p className="mt-2 text-sm text-gray-400">
                       {feature.description}
                     </p>
+                    <div className="mt-4 flex flex-col gap-2">
+                  {feature.links[0] && (
+                    <Button
+                      href={feature.links[0]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="z-50 text-sm px-3 py-2 font-semibold bg-gray-900 hover:bg-gray-950"
+                    >
+                      GitHub
+                    </Button>
+                  )}
+                  {feature.links[1] && (
+                    <Button
+                      href={feature.links[1]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="z-50 text-sm px-3 py-2 font-semibold bg-gray-900 hover:bg-gray-950"
+                    >
+                      Website
+                    </Button>
+                  )}
+                </div>
                   </div>
                 </div>
               </div>

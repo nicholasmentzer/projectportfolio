@@ -12,6 +12,7 @@ import flutter from "@/images/flutter.png";
 import bcards from "@/images/bcards.png";
 import aws from "@/images/aws.jpg"
 import chains from "@/images/chains.png"
+import botc from "@/images/botc.png"
 import gun from "@/images/gun.png"
 import Button from "./Button";
 
@@ -211,6 +212,31 @@ function SimulatorScreen({ custom, animated = false }) {
   );
 }
 
+function BotcScreen({ custom, animated = false }) {
+  return (
+    <AppScreen className="w-full">
+      <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
+        <AppScreen.Title>BOTC Tracker App</AppScreen.Title>
+        <AppScreen.Subtitle>Created with Flutter, for group use on iOS and Android!</AppScreen.Subtitle>
+      </MotionAppScreenHeader>
+      <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
+        <div className="px-4 py-6">
+          <div className='flex justify-center'>
+            </div>
+            <div className='flex justify-center'>
+              <Image 
+                src={botc}
+                width={500}
+                alt=""
+              />
+            </div>
+          
+        </div>
+      </MotionAppScreenBody>
+    </AppScreen>
+  );
+}
+
 function InternScreen({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
@@ -306,6 +332,14 @@ export const features = [
     icon: DeviceNotificationIcon,
     screen: SimulatorScreen,
     links: ["https://github.com/nicholasmentzer/survivorsim", "https://www.thesurvivorchains.com"],
+  },
+  {
+    name: "BOTC Tracker App - Personal Project (In Progress)",
+    description:
+      "An app I am in the process of making as a simple and easy way to track a players' experiences from one of my favorite social strategy games, Blood on the Clocktower. Created with Flutter for both iOS and Android, this project allowed me to experiment with tools I wasn't able to use in professional development, as well as provide a tangible project with releasable code for a Flutter project I have worked on.",
+    icon: DeviceNotificationIcon,
+    screen: BotcScreen,
+    links: ["https://github.com/nicholasmentzer/botctracker"],
   },
   {
     name: "Business Card App - Internship Project",
