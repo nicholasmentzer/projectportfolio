@@ -336,7 +336,7 @@ export const features = [
   {
     name: "BOTC Tracker App - Personal Project (In Progress)",
     description:
-      "An app I am in the process of making as a simple and easy way to track a players' experiences from one of my favorite social strategy games, Blood on the Clocktower. Created with Flutter for both iOS and Android, this project allowed me to experiment with tools I wasn't able to use in professional development, as well as provide a tangible project with releasable code for a Flutter project I have worked on.",
+      "A cross-platform mobile application currently in development, designed to help players track their in-game experiences from the social strategy game Blood on the Clocktower. Built using Flutter for both iOS and Android, this project is a fully self-directed Flutter application that showcases both my technical skills and interests in thoughtful user-focused design. Download the APK through the Github link until it becomes available on app stores!",
     icon: DeviceNotificationIcon,
     screen: BotcScreen,
     links: ["https://github.com/nicholasmentzer/botctracker"],
