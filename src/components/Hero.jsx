@@ -3,6 +3,7 @@ import Container from './Container'
 import Title from './Title'
 import Image from 'next/image'
 import lehigh from "@/images/lehigh.png"
+import certificate from "@/images/certificate.png"
 import avatar from "@/images/avatar.png"
 import {BsPlayCircle} from 'react-icons/bs'
 import Button from './Button'
@@ -22,10 +23,12 @@ const Hero = () => {
                         I graduated from Lehigh University with a Bachelor of Science degree in Computer Science & Engineering in just over 3 years and have nearly
                         two years of professional experience in developing web applications for
                         companies in sectors ranging from mental health applications to firearm
-                        detection and control.
+                        detection and control, and am AWS certified!
                     </p>
                     <div className='mt-8 flex flex-wrap items-center gap-x-6 gap-4'>
-                        <Image src={lehigh} alt='lehighLogo' className='w-32 h-auto' />
+                        <a href="https://www.credly.com/badges/1fcac152-526c-4638-909b-34b745d1fb0e/public_url" target="_blank" rel="noopener noreferrer">
+                            <Image src={certificate} alt="awscertificate" className="w-32 h-auto" />
+                        </a>
                     </div>
                     <p className='mt-6 text-lg text-gray-600'>
                         Besides coding, I spend a lot of my time playing strategy video games (Fire Emblem, TFT, etc.) or discussing reality tv like Survivor!
